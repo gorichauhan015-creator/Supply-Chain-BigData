@@ -1,15 +1,14 @@
- Supply Chain Big Data Analysis Project
+# Supply Chain Big Data Analysis (PySpark)
 
- Overview
-
-This project focuses on analyzing a large-scale supply chain dataset using PySpark.
-The goal is to process, clean, and extract meaningful business insights from the data.
-This project is built as part of a structured weekly pipeline to simulate real-world data engineering workflow.
+##  Project Overview
+This project focuses on analyzing supply chain data using PySpark.  
+It is divided into two phases:
+- Week 1: Learning PySpark basics using sample data
+- Week 2: Applying concepts on real-world supply chain dataset
 
 ---
 
- Tools & Technologies
-
+##  Tech Stack
 - Python
 - PySpark
 - VS Code
@@ -17,54 +16,53 @@ This project is built as part of a structured weekly pipeline to simulate real-w
 
 ---
 
- Project Structure
-
-- Data/ → Contains dataset
-- Scripts/ → All PySpark scripts (day-wise work)
-- Output/ → Generated results
-
----
-
- Week 1 Work (Data Processing)
-
-- Loaded dataset using PySpark
-- Performed basic operations (select, filter, count)
-- Explored dataset structure
-- Practiced DataFrame operations
+##  Week 1 - PySpark Basics (Sample Data)
+- Created Spark Session
+- Created DataFrame using sample data
+- Performed:
+  - Data selection
+  - Filtering
+  - Counting
+- Built a final combined script (Day 7)
 
 ---
 
- Week 2 Work (Data Cleaning & Analysis)
+##  Week 2 - Real Dataset Analysis
+Dataset: Supply Chain Data
 
-- Cleaned dataset (handled null values, fixed data types)
-- Selected important columns for analysis
-- Performed aggregations using GroupBy
-- Implemented Window Functions (running totals)
-- Generated business insights:
+### Tasks Performed:
+- Data Loading (CSV)
+- Handling Missing Values
+- Fixing Data Types
+- Feature Engineering
+- Aggregations:
   - Region-wise sales
   - Category-wise sales
-  - Top selling products
-- Saved outputs into separate folders
+- Window Functions:
+  - Running totals
+- Top Products Analysis
 
 ---
 
- Key Insights
+##  Output Generated
+- Region Sales
+- Category Sales
+- Top Products
 
-- Identified top-performing regions
-- Analyzed product category performance
-- Found highest selling products
-
----
-
- How to Run
-
-python Scripts/week2_day6.py
+(All outputs saved in Output folder)
 
 ---
 
- Conclusion
+##  Key Learnings
+- PySpark DataFrame operations
+- Data cleaning & transformation
+- Aggregations & window functions
+- Working with real-world datasets
 
-This project demonstrates the use of PySpark for handling and analyzing large datasets efficiently and generating useful business insights.
+---
+
+##  Conclusion
+This project demonstrates the transition from learning PySpark basics to applying them on real-world data for meaningful insights.
 
 ---
 
