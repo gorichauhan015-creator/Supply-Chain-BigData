@@ -53,9 +53,9 @@ top_products.show(10)
 # 6. SAVE OUTPUTS
 # =====================================
 
-region_sales.write.mode("overwrite").csv("Output/region_sales")
-category_sales.write.mode("overwrite").csv("Output/category_sales")
-top_products.write.mode("overwrite").csv("Output/top_products")
+region_sales.write.mode("overwrite").csv("Output/region_sales/")
+category_sales.write.mode("overwrite").csv("Output/category_sales/")
+top_products.write.mode("overwrite").csv("Output/top_products/")
 
 print(" All outputs saved successfully")
 
