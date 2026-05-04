@@ -43,3 +43,8 @@ final_df.write.mode("overwrite").csv("output/final_dashboard_data/")
 print("Week 3 Day 3 Completed - Final dataset ready for Power BI")
 
 spark.stop()
+
+final_df = final_df.withColumnRenamed("Order region", "order_region")
+
+print("Original rows:", df.count())
+print("Final rows:", final_df.count())
