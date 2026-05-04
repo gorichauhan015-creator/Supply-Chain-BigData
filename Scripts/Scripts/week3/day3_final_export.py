@@ -48,3 +48,29 @@ final_df = final_df.withColumnRenamed("Order region", "order_region")
 
 print("Original rows:", df.count())
 print("Final rows:", final_df.count())
+
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.appName("DetailedData").getOrCreate()
+
+# FIXED PATH
+df = spark.read.option("header", "true").csv("../../Data/Supply_chain_selected.csv")
+
+detailed_df = df.select(
+    "Order region",
+    "Category name",
+    "Market",
+    "Order country",
+    "Sales",
+    "Order profit per order",
+    "Shipping mode",
+    "Order status"
+)
+
+detailed_df.show(5)
+
+detailed_df.write.mode("overwrite").csv("../../output/detailed_dashboard_data/")
+
+print("Detailed dataset saved successfully")
+
+spark.stop()
